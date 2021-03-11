@@ -22,7 +22,7 @@ class SampleTest {
         "ADD, -1, 1, 0",
         "ADD, 1, 3, 4",
         "ADD, 100, -99, 1",
-        "MULT, 2, 2, 4"
+        "ADD, 8, 2, 10"
     })
     void add_behave_as_expected_various_cases(Sample.Operation operation, int a, int b, int expectedResult) {
         int result = new Sample().op(operation, a, b);

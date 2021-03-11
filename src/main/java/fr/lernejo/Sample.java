@@ -9,8 +9,7 @@ public class Sample {
     }
 
     enum Operation {
-        ADD((a, b) -> a + b),
-        MULT((a, b) -> a * b),
+        ADD((a, b) -> a + b)
         ;
 
         final BiFunction<Integer, Integer, Integer> func;
